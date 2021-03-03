@@ -1,0 +1,9 @@
+{{#each erros}}<div class="alert-danger">{{texto}}</div>{{/each}}
+<h1>Nova Categoria:</h1>
+<div>
+    <form action="/admin/categorias/nova" method="post" class="form">
+        <label for="nome">Nome:</label><input type="text" id="nome" name="nome" placeholder="Nome da Categoria">
+        <label for="slug">Slug:</label><input type="text" id="slug" name="slug" placeholder="Slug da Categoria">
+        <button>Criar Categoria</button>
+    </form>
+</div>

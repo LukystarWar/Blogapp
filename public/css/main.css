@@ -1,0 +1,160 @@
+:root{
+    --black: #0000009c;
+    --color1:#ed143cc9; 
+    
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+}
+h1, h2, hr, p, small{
+    margin: 5px 0;
+}
+h1{
+    font-size: 30px;
+}
+/* Inicio navbar */
+body{
+    min-width: 500px;
+}
+nav{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    min-width: 800px;
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    background-color: var(--black);
+}
+nav > div, ul{
+    display: flex;
+}
+nav > div > ul > li{
+    margin: 15px 10px;
+}
+li > a{
+    color: white;
+}
+/* Fim NavBar */
+body{
+    color: var(--black);
+    background: var(--color1);
+    margin: 0 auto;
+}
+.container{
+    width: 70%;
+    margin: 50px auto;
+    min-height: 95vh;
+    max-width: 1000px;
+    min-width: 800px;
+    height: fit-content;
+    padding: 50px 50px;
+    background: white;
+}
+.jumbotron{
+    padding: 50px;
+    background-color: var(--black);
+    color: white;
+}
+#btnAcc{
+    background-color: crimson;
+    border-color: crimson;
+}
+button{
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    border-radius: 5px;
+    border-color: var(--color1);
+    background-color: var(--color1);
+}
+button:hover{
+    animation: ease-in-out 1s;
+}
+.alert-danger, .alert-success{
+    width: 100%;
+    padding: 16px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+.alert-danger{
+    color: #842029;
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+}
+.alert-success{
+    color: #0f5132;
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+}
+.post{
+    padding: 20px 10px;
+    border : 1px solid black;
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+}
+.select{
+    padding: 10px;
+}
+.btn-del{
+    background-color: rgba(0, 0, 0, 0.712);
+    border-color: grey;
+}
+.btn-edit, .btn-del{
+    width: 160px;
+    margin: 10px 0;
+}
+.form{
+    border: 1px solid black;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 550px;
+    margin: 50px auto;
+    color: var(--color1);
+    font-weight: bold;
+}
+.form > input{
+    padding: 5px;
+    margin: 10px 0;
+}
+.form > input::placeholder{
+    font: normal 15px verdana;
+    text-indent: 10px;
+}
+.form > button{
+    margin-top: 20px;
+    font: bold 15px verdana;
+}
+
+.message{
+    font: bold 25px verdana;
+}
+.pub > p{
+    text-indent: 50px;
+    margin-top: 20px;
+    text-align: justify;
+}
+
+button:hover{
+    background-color: #ed143cec;
+    animation: ease-in-out;
+}
+.btn-del:hover{
+    background-color:rgb(0, 0, 0);
+}
+.mt{
+    margin-top: 10px;
+}

@@ -1,0 +1,25 @@
+{{#if user}}
+{{else}}
+{{!-- Apenas se não estiver logado --}}
+<div class="jumbotron">
+    <h1>Bem-Vindo ao Blog Node.js</h1>
+    <p>Site criado apenas para propósitos educacionais</p>
+    <hr>
+    <p>Contém bugs, use capacete!</p>
+    <a href="/usuarios/registro"><button id="btnAcc">Crie uma conta</button></a>
+</div>
+<hr>
+{{/if}}
+<h2>Postagens recentes</h2>
+{{#each postagens}}
+    <div class="post">
+        <h3>{{titulo}}</h3>
+        <p>{{descricao}}</p>
+        <a href="/postagem/{{slug}}"><button>Leia Mais</button></a>
+        <hr>
+        <small><strong>Categoria:</strong><a href="/categorias/{{categoria.slug}}">{{categoria.nome}}</a></small>
+        <small><strong>Data de Publicação:</strong> {{data}}</small>
+    </div>
+{{else}}
+<h5>Nenhuma Postagem</h5>
+{{/each}}
